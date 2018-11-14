@@ -1,0 +1,25 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.onebyte.HomeFragment">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.example.onebyte.shopstore.Models.HomeModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_20"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvHomeItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</layout>
