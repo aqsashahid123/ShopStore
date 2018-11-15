@@ -9,11 +9,8 @@ import android.view.View
 import android.widget.Toast
 import br.com.ilhasoft.support.validation.Validator
 import com.example.onebyte.shopstore.ViewModels.CheckoutViewModel
-import com.example.onebyte.shopstore.ViewModels.RegisterActivity
 import com.example.onebyte.shopstore.databinding.ActivityCheckoutBinding
-import com.example.onebyte.shopstore.databinding.ActivityRegisterBinding
 import kotlinx.android.synthetic.main.activity_checkout.*
-import kotlinx.android.synthetic.main.activity_login.*
 
 class CheckoutActivity : AppCompatActivity(), View.OnClickListener, Validator.ValidationListener {
 
@@ -46,7 +43,7 @@ class CheckoutActivity : AppCompatActivity(), View.OnClickListener, Validator.Va
     }
 
     override fun onValidationError() {
-        Toast.makeText(this, "Boom", Toast.LENGTH_SHORT).show()
+    //    Toast.makeText(this, "Boom", Toast.LENGTH_SHORT).show()
     }
 
     override fun onValidationSuccess() {

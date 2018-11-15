@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_20"
-            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginLeft="22dp"
             android:layout_marginTop="@dimen/dimen_20"
             android:text="@string/label_use_email"
             android:textColor="@color/colorBlack" />
@@ -145,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_10"
-            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginLeft="22dp"
             android:layout_marginRight="@dimen/dimen_20"
             android:orientation="horizontal">
 

@@ -4,7 +4,8 @@ import android.content.Context
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import com.example.onebyte.HomeFragment
+import com.example.onebyte.shopstore.CartFragment
+import com.example.onebyte.shopstore.HomeFragment
 import com.example.onebyte.shopstore.SavedItemsFragment
 
 public class PagerAdapter (fm: FragmentManager, private val context: Context) : FragmentStatePagerAdapter(fm) {
@@ -13,7 +14,7 @@ public class PagerAdapter (fm: FragmentManager, private val context: Context) : 
         when (position) {
             0 -> return HomeFragment.newInstance()
             1 -> return SavedItemsFragment.newInstance()
-            2 -> return HomeFragment.newInstance()
+            2 -> return CartFragment.newInstance()
 //            3 -> return HomeFragment.newInstance()
 //            4 -> return HomeFragment.newInstance()
         }

@@ -1,6 +1,5 @@
-package com.example.onebyte
+package com.example.onebyte.shopstore
 
-import android.content.Context
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -12,15 +11,13 @@ import android.view.ViewGroup
 import com.example.onebyte.shopstore.Adapters.HomeAdapter
 import com.example.onebyte.shopstore.Models.HomeModel
 
-import com.example.onebyte.shopstore.R
-
 
 class HomeFragment : Fragment() {
 
     var dataList: ArrayList<HomeModel> = ArrayList()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view: View = inflater!!.inflate(R.layout.fragment_home, container,
+        val view: View = inflater.inflate(R.layout.fragment_home, container,
                 false)
         var model: HomeModel = HomeModel("Test Data", "Discount : 10 %", "1000", "After discount 900")
         dataList.add(model)

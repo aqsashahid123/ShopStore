@@ -31,7 +31,7 @@ class DashboardActivity : AppCompatActivity() {
         tabs.getTabAt(0)!!.text = "Home"
         tabs.getTabAt(1)!!.setIcon(R.drawable.ic_like)
         tabs.getTabAt(1)!!.text = "Saved"
-        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_facebook_logo)
+        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_shopping_cart)
         tabs.getTabAt(2)!!.text = "Cart"
     }
 }

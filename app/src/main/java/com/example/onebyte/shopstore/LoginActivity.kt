@@ -9,9 +9,7 @@ import android.view.View
 import android.widget.Toast
 import br.com.ilhasoft.support.validation.Validator
 import com.example.onebyte.shopstore.ViewModels.LoginViewModel
-import com.example.onebyte.shopstore.ViewModels.RegisterActivity
 import com.example.onebyte.shopstore.databinding.ActivityLoginBinding
-import com.example.onebyte.shopstore.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener, Validator.ValidationListener {
@@ -30,7 +28,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, Validator.Valid
     }
 
     override fun onValidationError() {
-        Toast.makeText(this, "Boom", Toast.LENGTH_SHORT).show()
+     //   Toast.makeText(this, "Boom", Toast.LENGTH_SHORT).show()
     }
 
     override fun onValidationSuccess() {

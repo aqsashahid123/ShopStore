@@ -11,6 +11,7 @@ import android.support.v4.content.ContextCompat.startActivity
 import android.util.Log
 import android.view.View
 import com.example.onebyte.shopstore.LoginActivity
+import com.example.onebyte.shopstore.RegisterActivity
 import java.util.*
 
 class TransactionViewModel() :  ViewModel() {
@@ -22,7 +23,7 @@ class TransactionViewModel() :  ViewModel() {
     }
     fun goToRegister(context: Context) {
         Log.e("================>","Pressed")
-        val intent = Intent(context, LoginActivity::class.java)
+        val intent = Intent(context, RegisterActivity::class.java)
         context.startActivity(intent)
     }
 }

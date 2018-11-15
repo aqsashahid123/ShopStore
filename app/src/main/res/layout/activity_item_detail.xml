@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ItemDetail">
+
+    <data>
+        <!--<variable-->
+        <!--name="vm"-->
+        <!--type=""-->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Item Name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Item Name"
+            />
+            <ImageView
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"/>
+        </LinearLayout>
+
+
+
+
+       <!--<android.support.v4.view.ViewPager-->
+           <!--android:id="@+id/vpImages"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="200dp"/>-->
+    </LinearLayout>
+</layout>
