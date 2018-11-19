@@ -1,19 +1,24 @@
 package com.example.onebyte.shopstore.Adapters
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import com.example.onebyte.shopstore.Models.HomeModel
 import android.databinding.DataBindingUtil
 import android.view.LayoutInflater
+import com.example.onebyte.shopstore.BR
 import com.example.onebyte.shopstore.R
+import com.example.onebyte.shopstore.Views.Activities.ItemDetail
+import com.example.onebyte.shopstore.Views.Activities.RegisterActivity
 import com.example.onebyte.shopstore.databinding.RvCellBinding
 
 
-class HomeAdapter(var list: List<HomeModel>) : RecyclerView.Adapter<HomeAdapter.Holder>() {
+class HomeAdapter(var list: List<HomeModel>?, val context: Context?) : RecyclerView.Adapter<HomeAdapter.Holder>() {
     lateinit var layoutInflater: LayoutInflater
     lateinit var binding: RvCellBinding
+    //lateinit var context: Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
 
         binding = DataBindingUtil
@@ -23,21 +28,28 @@ class HomeAdapter(var list: List<HomeModel>) : RecyclerView.Adapter<HomeAdapter.
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return list!!.size
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(list[position])
+
+        holder.binding.setVariable(BR.homeItemsModel,list?.get(position))
+        binding.root.setOnClickListener(View.OnClickListener {
+            val intent = Intent(context, ItemDetail::class.java)
+            context!!.startActivity(intent)
+        })
+    }
+
+    fun setDataList(list: List<HomeModel>?) {
+        this.list = list
+        notifyItemInserted(0)
+
     }
 
     class Holder(val binding: RvCellBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: HomeModel){
-            with(binding){
-                tvDatum.text = item.dataum
-                tvDiscount.text =item.discount
-                tvName.text = item.name
-                tvPrice.text = item.price
-            }
-        }
+    }
+
+    public interface Listeners {
+        public fun onClickLikeButton()
     }
 }

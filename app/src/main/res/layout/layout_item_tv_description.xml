@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="descriptionData"
+            type="com.example.onebyte.shopstore.Models.HomeModel"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Description"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDealDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@{descriptionData.dataum}"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

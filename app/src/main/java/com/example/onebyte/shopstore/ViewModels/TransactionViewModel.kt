@@ -1,18 +1,11 @@
 package com.example.onebyte.shopstore.ViewModels
 
-import android.arch.lifecycle.AndroidViewModel
-
 import android.arch.lifecycle.ViewModel
 import android.content.Context
 import android.content.Intent
-import android.databinding.BaseObservable
-import android.databinding.Observable
-import android.support.v4.content.ContextCompat.startActivity
 import android.util.Log
-import android.view.View
-import com.example.onebyte.shopstore.LoginActivity
-import com.example.onebyte.shopstore.RegisterActivity
-import java.util.*
+import com.example.onebyte.shopstore.Views.Activities.LoginActivity
+import com.example.onebyte.shopstore.Views.Activities.RegisterActivity
 
 class TransactionViewModel() :  ViewModel() {
 

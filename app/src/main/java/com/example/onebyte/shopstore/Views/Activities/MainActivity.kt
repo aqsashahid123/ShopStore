@@ -1,15 +1,11 @@
-package com.example.onebyte.shopstore
+package com.example.onebyte.shopstore.Views.Activities
 
-import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
-import android.content.Context
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.renderscript.ScriptGroup
-import android.util.Log
 import com.example.onebyte.shopstore.databinding.ActivityMainBinding
-import android.content.Intent
+import com.example.onebyte.shopstore.R
 import com.example.onebyte.shopstore.ViewModels.TransactionViewModel
 
 

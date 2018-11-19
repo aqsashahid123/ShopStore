@@ -1,4 +1,4 @@
-package com.example.onebyte.shopstore
+package com.example.onebyte.shopstore.Views.Activities
 
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import br.com.ilhasoft.support.validation.Validator
+import com.example.onebyte.shopstore.R
 import com.example.onebyte.shopstore.ViewModels.CheckoutViewModel
 import com.example.onebyte.shopstore.databinding.ActivityCheckoutBinding
 import kotlinx.android.synthetic.main.activity_checkout.*

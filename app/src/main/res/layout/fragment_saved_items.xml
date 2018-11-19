@@ -5,7 +5,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SavedItemsFragment">
+        tools:context=".Views.Fragments.SavedItemsFragment">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvSavedItems"

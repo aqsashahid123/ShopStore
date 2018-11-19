@@ -6,7 +6,7 @@
     <data>
         <variable
             name="signupModel"
-            type="com.example.onebyte.shopstore.SignupViewModel"/>
+            type="com.example.onebyte.shopstore.ViewModels.SignupViewModel"/>
     </data>
 
     <LinearLayout
@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:padding="@dimen/dimen_20"
         android:background="@color/colorWhite"
-        tools:context=".RegisterActivity">
+        tools:context=".Views.Activities.RegisterActivity">
 
 
         <!--<LinearLayout-->

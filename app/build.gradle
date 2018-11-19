@@ -60,6 +60,8 @@ dependencies {
 
 
     implementation 'com.android.support:cardview-v7:28.0.0'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
     // viewPagerIndicator
     //implementation 'com.github.dongjunkun:CuteIndicator:1.0.1'
 
